@@ -1,6 +1,5 @@
 - name: Network Getting Started First Playbook
-  gather_facts: false
-  hosts: localhost 
+  hosts: all 
   tasks:
     - name: Display the config
       copy:
