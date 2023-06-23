@@ -1,13 +1,7 @@
-- hosts: localhost
-  connection: local
-  vars:
-  - manageiq_validate_certs: false
-  # roles:
-  # - manageiq-core.manageiq-automate
+- name: Network Getting Started First Playbook
+  gather_facts: false
+  hosts: all
   tasks:
-  - name: Get the full list of method parameters (get_method_parameters)
-    # manageiq_automate:
-    #   workspace: "{{ workspace }}"
-    #   get_method_parameters: yes
-    # register: get_method_parameters
-  - debug: msg="HELLO THERE WORLD:"
+    - name: Display the config
+      debug:
+        msg: "The hostname is Mattar"
