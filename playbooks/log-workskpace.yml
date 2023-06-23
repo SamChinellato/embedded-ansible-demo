@@ -1,7 +1,8 @@
 - name: Network Getting Started First Playbook
   gather_facts: false
-  hosts: all
+  hosts: localhost 
   tasks:
     - name: Display the config
-      debug:
-        msg: "The hostname is Mattar"
+      copy:
+        content: "RANGIN"
+        dest: /tmp/hello
