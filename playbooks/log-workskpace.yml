@@ -1,5 +1,5 @@
 - name: Network Getting Started First Playbook
-  hosts: all 
+  hosts: localhost 
   tasks:
     - name: Display the config
       copy:
