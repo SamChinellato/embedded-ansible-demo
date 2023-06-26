@@ -1,6 +1,16 @@
-- name: LOLOLOL
+- name: PostProvisionSample
   hosts: localhost
   tasks:
    - name: GET
      ansible.builtin.uri:
        url: http://mcm-demo-api-service.mcm-demo-api.svc.cluster.local/api/hello
+   - name: POST
+     ansible.builtin.uri:
+       url: http://mcm-demo-api-service.mcm-demo-api.svc.cluster.local/items/
+       method: POST
+       body: >-
+        {{ {"name": "hello",
+             "id": "hi",
+            } }}
+       body_format: json
+       validate_certs: no
