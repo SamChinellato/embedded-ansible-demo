@@ -1,7 +1,6 @@
-- name: Network Getting Started First Playbook
-  hosts: localhost 
+- name: LOLOLOL
+  hosts: localhost
   tasks:
-    - name: Display the config
-      copy:
-        content: "RANGIN"
-        dest: /tmp/hello
+   - name: GET
+     ansible.builtin.uri:
+       url: http://mcm-demo-api-service.mcm-demo-api.svc.cluster.local/api/hello
