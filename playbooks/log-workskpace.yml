@@ -1,5 +1,9 @@
 - name: PostProvisionSample
   hosts: localhost
+  vars:
+    - manageiq_validate_certs: false
+  roles:
+    - manageiq-core.manageiq-automate
   tasks:
    - name: GET
      ansible.builtin.uri:
