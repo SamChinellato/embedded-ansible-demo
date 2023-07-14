@@ -1,0 +1,3 @@
+---
+- source: manageiq.manageiq_automate
+  version: v0.1.3
