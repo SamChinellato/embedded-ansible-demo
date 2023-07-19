@@ -2,6 +2,12 @@
   hosts: localhost
   vars:
     - manageiq_validate_certs: false
+    - manageiq_connection:
+          url: 'https://localhost:3000'
+          username: 'admin'
+          password: 'password'
+          automate_workspace: 'automate_workspaces/1234'
+          manageiq_validate_certs: false
   roles:
     - role: '/runner/project/roles/manageiq.manageiq_automate'
   tasks:
