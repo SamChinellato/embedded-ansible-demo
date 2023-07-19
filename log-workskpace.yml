@@ -3,7 +3,7 @@
   vars:
     - manageiq_validate_certs: false
   roles:
-    - manageiq.manageiq-automate
+    - role: '/runner/project/roles/manageiq.manageiq_automate'
   tasks:
    - name: GET
      ansible.builtin.uri:
