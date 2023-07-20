@@ -1,6 +1,9 @@
 - name: PostProvisionSample
   hosts: localhost
   tasks:
+   - name: Print vars 
+     ansible.builtin.debug:
+       msg: Hello {{ hello }} has name {{ name }} and hostname "{{ hostname }}"
    - name: GET
      ansible.builtin.uri:
        url: http://mcm-demo-api-service.mcm-demo-api.svc.cluster.local/api/hello
