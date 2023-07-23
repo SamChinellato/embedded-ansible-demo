@@ -6,7 +6,7 @@
        msg: Hello {{ hello }} has name {{ name }} and hostname "{{ hostname }}"
    - name: Print passed in variables
      ansible.builtin.debug:
-       msg: ManageIQ variable is {{ manageiq }} and the connection variables are {{ manageiq_connection }}
+       msg: ManageIQ api_token is {{ manageiq.api_token }} and the connection variables are {{ manageiq_connection.url }}
    - name: GET
      ansible.builtin.uri:
        url: http://mcm-demo-api-service.mcm-demo-api.svc.cluster.local/api/hello
