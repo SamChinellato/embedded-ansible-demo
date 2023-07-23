@@ -10,9 +10,9 @@
 #  roles:
 #    - role: '/runner/project/roles/manageiq.manageiq_automate'
   tasks:
-#   - name: Print vars 
-#     ansible.builtin.debug:
-#       msg: Hello {{ hello }} has name {{ name }} and hostname "{{ hostname }}"
+   - name: Print vars 
+     ansible.builtin.debug:
+       msg: Hello {{ vendor }}
 #   - name: Print passed in variables
 #     ansible.builtin.debug:
 #       msg: ManageIQ api_token is {{ manageiq.api_token }} and the connection variables are {{ manageiq_connection.url }}
