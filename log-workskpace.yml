@@ -7,8 +7,8 @@
         password: "{{ manageiq.api_token }}"
         automate_workspace: "{{ manageiq.automate_workspace }}"
         manageiq_validate_certs: false
-  roles:
-    - role: '/runner/project/roles/manageiq.manageiq_automate'
+#  roles:
+#    - role: '/runner/project/roles/manageiq.manageiq_automate'
   tasks:
    - name: Print vars 
      ansible.builtin.debug:
