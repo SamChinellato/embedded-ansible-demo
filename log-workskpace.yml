@@ -2,10 +2,10 @@
   hosts: localhost
   vars:
     - manageiq_connection:
-        url: {{ manageiq_connection.url }} 
-        username: {{ manageiq.user }}
-        password: {{ manageiq.api_token }}
-        automate_workspace: {{ manageiq.automate_workspace }}
+        url: "{{ manageiq_connection.url }}" 
+        username: "{{ manageiq.user }}"
+        password: "{{ manageiq.api_token }}"
+        automate_workspace: "{{ manageiq.automate_workspace }}"
         manageiq_validate_certs: false
   roles:
     - role: '/runner/project/roles/manageiq.manageiq_automate'
