@@ -2,7 +2,7 @@
   hosts: localhost
   vars:
     - manageiq_connection:
-        url: "https://172.30.219.161" 
+        url: "http://ansible-manageiq-role-connection-cp4waiops.apps.waggled.cp.fyre.ibm.com"
         username: "{{ manageiq.user }}"
         password: "{{ manageiq.api_token }}"
         automate_workspace: "{{ manageiq.automate_workspace }}"
