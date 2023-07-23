@@ -2,7 +2,7 @@
   hosts: localhost
   vars:
     - manageiq_connection:
-        url: "{{ manageiq_connection.url }}" 
+        url: "172.30.219.161" 
         username: "{{ manageiq.user }}"
         password: "{{ manageiq.api_token }}"
         automate_workspace: "{{ manageiq.automate_workspace }}"
